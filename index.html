@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="input">
+            <textarea id="inputText" placeholder="Ingrese el texto aqui" name="frase" id="frase" cols="30"
+                rows="10"></textarea>
+            <span>Solo letras minúsculas y sin acentos</span>
+            <div class="buttons">
+                <button id="encryptButton" class="cifrar">Encriptar</button>
+                <button id="decryptButton" class="desifrar">Desencriptar </button>
+                <button id="clearButton" class="limpiar">Limpiar </button>
+
+            </div>
+
+        </div>
+        <div class="output">
+            <textarea id="outputText" class="custom-textarea output-text" readonly></textarea>
+            <div id="placeholderImage">
+                <img src="assets/nohaynada.png" alt="Placeholder" class="placeholder-image">
+                <h2>Ningún mensaje fue encontrado</h4>
+                    <p>Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+            <div class="copiar">
+                <button id="copyButton">Copiar</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        Desarrollado por José Antonio Jiménez Reyes
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

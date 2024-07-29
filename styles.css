@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: #E8E8E8;
+}
+
+.input, .output {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.input {
+    flex: 7;
+    margin-left: 40px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.output {
+    margin: 30px;
+    background-color: white;
+    border-radius: 15px;
+    flex: 3;
+    padding-left: 100px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+textarea {
+    width: 100%;
+    height: calc(50% - 60px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: none;
+    font-size: 16px;
+    color: #0A3871;
+    background-color: #E8E8E8;
+}
+
+.output-text {
+    display: none;
+    margin-top: 20px;
+    height: auto;
+    background-color: white;
+    color: black;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 240px;
+}
+
+.cifrar {
+    background-color: #0A3871;
+    border: none;
+}
+
+.desifrar {
+    background-color: #D8DFE8;
+    border-color: #0A3871;
+    color: #0A3871;
+}
+
+.limpiar {
+    background-color: #0A3871;
+    border: none;
+}
+
+.copiar {
+    margin-top: 310px;
+    margin-left: 60px;
+}
+
+#copyButton {
+    background-color: white;
+    border-color: #0A3871;
+    color: #0A3871;
+}
+
+footer{
+    background-color: #0A3871;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 680px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .input, .output {
+        margin: 10px;
+        padding: 10px;
+        flex: none;
+    }
+
+    .input {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .output {
+        padding-left: 10px;
+        margin-top: 0;
+    }
+
+    .copiar {
+        margin-top: 20px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    textarea {
+        height: 100px;
+    }
+}
